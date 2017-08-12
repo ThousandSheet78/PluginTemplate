@@ -1,0 +1,19 @@
+name: test
+main: test\main
+version: 1.0.0
+author: test
+api: [1.0.0, 2.0.0, 3.0.0]
+
+commands:
+ name:
+  description: Example Command
+  usage: "/name"
+  permission: example.command
+permissions:
+    name:
+        default: op
+        description: "Example Command"
+        children:
+            example.command:
+                default: op
+                description: "Example Command Permission"
